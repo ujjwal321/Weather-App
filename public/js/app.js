@@ -17,7 +17,13 @@ weatherForm.addEventListener('submit', (e) => {
 				msg1.innerText = data.error;
 			} else {
 				msg1.innerText = data.location;
-				msg2.innerText = 'temperature: ' + data.temperature;
+				msg2.innerText =
+					'Current Temperature is ' +
+					data.temperature +
+					'.It is ' +
+					data.desc +
+					' and feels like ' +
+					data.feelslike;
 			}
 		});
 	});

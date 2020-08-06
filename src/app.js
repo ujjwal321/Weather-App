@@ -65,7 +65,9 @@ app.get('/weather', (req, res) => {
 						res.send({
 							location: location,
 							temperature: forecastdata.temperature,
-							precipitation: forecastdata.precipitation
+							precipitation: forecastdata.precipitation,
+							feelslike: forecastdata.feelslike,
+							desc: forecastdata.desc
 						});
 					}
 				});
